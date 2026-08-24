@@ -43,7 +43,7 @@ recipes = {
         ],
         "method": [
             "Cut up lettuce and and to bowl with croutons, cheese and ceasar sauce.",
-            "Cook chicken until it reaches 65 degrees."
+            "Cook chicken until it reaches 65 degrees.",
             "Dice chicken and add to salad."
         ]
     }
