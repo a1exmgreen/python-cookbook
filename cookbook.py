@@ -16,25 +16,37 @@ def display_recipes():
     for recipe_name in recipes:
         print(recipe_name.title())
 
+def get_recipe(recipe_choice):
+    if recipe_choice in recipes:
+        return recipes[recipe_choice]
+    
+    return None
+
+def display_ingredients(recipe):
+    print("\nIngredients:")
+
+    for ingredient in recipe["ingredients"]:
+        print(f"- {ingredient}")
+
+def display_method(recipe):
+    print("\nMethod:")
+
+    for step in recipe["method"]:
+        print(f"- {step}")
 
 def view_recipe():
     recipe_choice = input(
         "\nWhich recipe would you like to view? "
     ).lower()
 
-    if recipe_choice in recipes:
-        recipe = recipes[recipe_choice]
+    recipe = get_recipe(recipe_choice)
 
+    if recipe:
         print(f"\n--- {recipe_choice.title()} ---")
 
-        print("\nIngredients:")
-        for ingredient in recipe["ingredients"]:
-            print(f"- {ingredient}")
+        display_ingredients(recipe)
 
-        print("\nMethod:")
-        for step in recipe["method"]:
-            print(f"- {step}")
-
+        display_method(recipe)
     else:
         print("\nSorry, that recipe doesn't exist.")
 
