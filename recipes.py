@@ -32,5 +32,19 @@ recipes = {
             "Add the coconut milk.",
             "Simmer until the chicken is cooked."
         ]
+    },
+    "chicken ceasar salad": {
+        "ingredients": [
+            "1 lettuce",
+            "1 chicken breast",
+            "handful of croutons",
+            "ceasar sauce",
+            "Cheese"
+        ],
+        "method": [
+            "Cut up lettuce and and to bowl with croutons, cheese and ceasar sauce.",
+            "Cook chicken until it reaches 65 degrees."
+            "Dice chicken and add to salad."
+        ]
     }
 }
